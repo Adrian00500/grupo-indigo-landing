@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grupo Indigo | Agencia de Marketing Digital</title>
+<title>Grupo Índigo Digital — Agencia de branding y marketing en Santo Domingo</title>
+<meta name="description" content="Construimos la forma en que el mercado percibe tu marca. Branding, contenido y estrategia con resultados reales. +4 años, 92% de fidelización. Agenda tu diagnóstico.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -75,7 +76,7 @@
     display:inline-flex; align-items:center; gap:8px;
     padding:17px 32px; border-radius:6px; font-weight:700; font-size:13px;
     letter-spacing:0.06em; text-transform:uppercase; cursor:pointer; border:none; transition:transform .2s ease, box-shadow .2s ease;
-    font-family:'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif; white-space:nowrap;
   }
   .btn:hover{ transform:translateY(-2px); }
   .btn-primary{ background:linear-gradient(90deg,var(--blue),var(--blue-light)); color:var(--white); box-shadow:0 14px 34px -10px rgba(0,73,198,0.65); }
@@ -90,15 +91,15 @@
     padding:22px 0; transition:background .3s ease, backdrop-filter .3s ease, padding .3s ease;
   }
   header.scrolled{ background:rgba(5,7,15,0.9); backdrop-filter:blur(16px); padding:14px 0; box-shadow:0 10px 30px -15px rgba(0,0,0,0.6); }
-  nav{ display:flex; align-items:center; justify-content:space-between; }
+  nav{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
   .logo-mark img{ height:26px; }
-  .nav-links{ display:flex; gap:36px; }
+  .nav-links{ display:flex; gap:30px; }
   .nav-links a{
     font-size:12.5px; font-weight:600; color:var(--white); letter-spacing:0.06em; text-transform:uppercase;
     opacity:0.78; transition:opacity .2s;
   }
   .nav-links a:hover{ opacity:1; }
-  .nav-cta .btn{ padding:12px 24px; font-size:11.5px; }
+  .nav-cta .btn{ padding:12px 20px; font-size:11px; }
 
   /* ---------- HERO ---------- */
   .hero{
@@ -107,30 +108,35 @@
       radial-gradient(50% 50% at 5% 90%, rgba(70,0,130,0.35), transparent 60%),
       var(--navy);
     min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:140px 24px 90px; overflow:hidden;
+    text-align:center; padding:150px 24px 80px; overflow:hidden;
+  }
+  .hero-kicker{
+    font-size:12.5px; font-weight:700; letter-spacing:0.28em; text-transform:uppercase;
+    color:var(--teal); position:relative; z-index:2; margin-bottom:6px;
   }
   .hero-wordmark{
     font-family:'Poppins', sans-serif; font-weight:900; text-transform:uppercase;
-    font-size:clamp(96px,23vw,380px); letter-spacing:-0.04em; line-height:0.82;
+    font-size:clamp(80px,19vw,300px); letter-spacing:-0.04em; line-height:0.82;
     width:100%;
     background:linear-gradient(100deg,#5C9BFF 0%, #8B5CF6 35%, #46D9D9 70%, #5C9BFF 100%);
     background-size:220% 100%;
     -webkit-background-clip:text; background-clip:text; color:transparent;
     filter:drop-shadow(0 0 45px rgba(46,124,246,0.55)) drop-shadow(0 0 90px rgba(31,200,200,0.4));
     animation:wordmark-shine 7s ease-in-out infinite;
-    position:relative; z-index:2;
+    position:relative; z-index:2; margin-top:10px;
   }
   @keyframes wordmark-shine{
     0%,100%{ background-position:0% 50%; }
     50%{ background-position:100% 50%; }
   }
-  .hero-tagline{
-    color:var(--white); font-size:clamp(16px,2.4vw,22px); font-family:'Poppins'; font-weight:500;
-    text-transform:none; margin-top:26px; max-width:620px; position:relative; z-index:2;
+  .hero-headline{
+    color:var(--white); font-size:clamp(22px,3.4vw,40px); font-family:'Poppins'; font-weight:800;
+    text-transform:none; margin-top:34px; max-width:780px; position:relative; z-index:2; line-height:1.22;
   }
-  .hero-sub{ color:var(--muted); font-size:15px; margin-top:16px; max-width:560px; line-height:1.6; position:relative; z-index:2;}
+  .hero-sub{ color:var(--muted); font-size:16px; margin-top:20px; max-width:620px; line-height:1.65; position:relative; z-index:2;}
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:38px; position:relative; z-index:2; }
   .scroll-cue{
-    margin-top:60px; display:flex; flex-direction:column; align-items:center; gap:10px;
+    margin-top:56px; display:flex; flex-direction:column; align-items:center; gap:10px;
     color:var(--muted); font-size:11px; letter-spacing:0.15em; text-transform:uppercase; position:relative; z-index:2;
   }
   .scroll-cue .arrow{
@@ -142,6 +148,14 @@
     background:var(--teal); animation:dropdown 1.8s infinite ease-in-out;
   }
   @keyframes dropdown{ 0%{ top:-10px; opacity:0; } 30%{ opacity:1; } 100%{ top:46px; opacity:0; } }
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust-strip{ background:var(--ink); padding:24px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+  .trust-strip .container{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px 26px; }
+  .trust-strip .brand{ color:#c7cbe6; font-size:13px; letter-spacing:0.04em; font-family:'Poppins'; font-weight:600; opacity:0.85; }
+  .trust-strip .sep{ color:rgba(255,255,255,0.18); }
+  .trust-stats{ width:100%; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 26px; margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.06); }
+  .trust-stats span{ color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.06em; font-family:'Poppins'; font-weight:600; }
 
   /* ---------- GALLERY (masonry, Ogilvy style) ---------- */
   .gallery{ background:var(--ink); padding:4px; }
@@ -169,14 +183,26 @@
   .g-text p{ color:rgba(255,255,255,0.85); font-size:12.5px; line-height:1.6; text-transform:none; font-family:'Inter'; }
   .g-text:hover img{ transform:none; }
 
-  /* ---------- STATEMENT BAND ---------- */
-  .statement{ background:var(--navy-2); padding:130px 0; text-align:center; position:relative; overflow:hidden; }
-  .statement::before{ content:""; position:absolute; inset:0; background:radial-gradient(60% 70% at 50% 30%, rgba(31,200,200,0.1), transparent 65%); }
-  .statement h2{
-    font-size:clamp(30px,6vw,64px); color:var(--white); font-weight:800; position:relative; z-index:2;
-    max-width:920px; margin:0 auto;
+  /* ---------- EL PROBLEMA ---------- */
+  .problema{ background:var(--navy); padding:130px 0; text-align:center; position:relative; overflow:hidden; }
+  .problema::before{ content:""; position:absolute; inset:0; background:radial-gradient(55% 60% at 50% 20%, rgba(70,0,130,0.28), transparent 65%); }
+  .problema h2{
+    font-size:clamp(28px,5.2vw,54px); color:var(--white); font-weight:800; position:relative; z-index:2;
+    max-width:880px; margin:0 auto; line-height:1.18;
   }
-  .statement p{ color:var(--muted); font-size:15px; max-width:640px; margin:26px auto 0; line-height:1.7; text-transform:none; font-family:'Inter'; position:relative; z-index:2; }
+  .problema h2 .line2{ display:block; margin-top:6px; }
+  .problema p{ color:var(--muted); font-size:15.5px; max-width:680px; margin:22px auto 0; line-height:1.75; text-transform:none; font-family:'Inter'; position:relative; z-index:2; }
+  .problema p + p{ margin-top:16px; }
+  .problema p.close{ color:#c7cbe6; font-weight:600; }
+
+  /* ---------- EL REFRAME ---------- */
+  .reframe{ background:var(--white); padding:140px 0; text-align:center; }
+  .reframe h2{
+    font-size:clamp(28px,5vw,50px); color:var(--ink); font-weight:800;
+    max-width:900px; margin:0 auto; line-height:1.22;
+  }
+  .reframe p{ color:#5b6088; font-size:15.5px; max-width:680px; margin:20px auto 0; line-height:1.75; text-transform:none; font-family:'Inter'; }
+  .reframe p.close{ color:var(--ink); font-weight:700; font-size:17px; margin-top:30px; }
 
   /* ---------- SECTION HEADS ---------- */
   .section-head{ max-width:660px; margin-bottom:60px; }
@@ -188,22 +214,11 @@
   .on-light .section-head h2{ color:var(--ink); }
   .on-light .section-head p{ color:#6b7195; }
 
-  /* ---------- SERVICIOS ---------- */
-  .servicios{ background:var(--white); padding:130px 0; }
-  .service-chips{ display:flex; flex-wrap:wrap; gap:12px; }
-  .chip{
-    padding:15px 24px; border-radius:8px; background:var(--paper); border:1px solid #E7E9F3;
-    font-size:13.5px; font-weight:600; font-family:'Poppins'; color:var(--ink);
-    display:flex; align-items:center; gap:10px; transition:all .25s ease;
-  }
-  .chip:hover{ background:var(--ink); color:#fff; border-color:transparent; transform:translateY(-3px); }
-  .chip .n{ width:20px; height:20px; border-radius:4px; background:linear-gradient(135deg,var(--blue),var(--teal)); color:#fff; font-size:10.5px; display:flex; align-items:center; justify-content:center; font-weight:800; }
-
-  /* ---------- CASOS (con fotos reales) ---------- */
-  .portafolio{ background:var(--ink); padding:130px 0; }
-  .case-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
+  /* ---------- TRANSFORMACIONES ---------- */
+  .transformaciones{ background:var(--ink); padding:130px 0; }
+  .case-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:4px; }
   .case-card{
-    position:relative; min-height:460px; overflow:hidden;
+    position:relative; min-height:440px; overflow:hidden;
     display:flex; flex-direction:column; justify-content:flex-end; padding:32px;
     color:#fff; isolation:isolate;
   }
@@ -211,40 +226,45 @@
   .case-card:hover img{ transform:scale(1.06); }
   .case-card::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 20%, rgba(0,0,0,0.88) 100%); z-index:-1; }
   .case-card .tag{ font-size:11px; text-transform:uppercase; letter-spacing:0.12em; opacity:0.85; margin-bottom:10px; color:var(--teal); font-weight:700; }
-  .case-card h4{ font-size:23px; font-weight:800; margin-bottom:10px; }
+  .case-card h4{ font-size:21px; font-weight:800; margin-bottom:10px; }
   .case-card p{ font-size:13.5px; opacity:0.9; font-family:'Inter'; text-transform:none; line-height:1.55; }
+  .transform-close{ text-align:center; margin-top:60px; }
+  .transform-close p{ color:var(--muted); font-size:15.5px; max-width:640px; margin:0 auto 26px; line-height:1.7; }
 
-  /* ---------- PLANES ---------- */
-  .planes{ background:var(--navy-2); padding:130px 0; position:relative; }
-  .planes::before{ content:""; position:absolute; inset:0; background:radial-gradient(80% 60% at 80% 0%, rgba(31,200,200,0.12), transparent 60%); }
-  .plan-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; position:relative; z-index:2; }
-  .plan-card{
-    background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:14px;
-    display:flex; flex-direction:column; backdrop-filter:blur(6px);
-    transition:border-color .3s ease, transform .3s ease;
+  /* ---------- SERVICIOS ---------- */
+  .servicios{ background:var(--white); padding:130px 0; }
+  .service-modules{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .service-card{
+    background:var(--paper); border:1px solid #E7E9F3; border-radius:14px; padding:32px 28px;
+    transition:all .25s ease;
   }
-  .plan-card:hover{ border-color:rgba(31,200,200,0.5); transform:translateY(-6px); }
-  .plan-card.featured{ border-color:var(--teal); background:rgba(31,200,200,0.05); }
-  .plan-top{ padding:32px 26px 24px; border-bottom:1px solid rgba(255,255,255,0.08); }
-  .plan-top .badge{ font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--teal); margin-bottom:10px; }
-  .plan-top h3{ font-size:25px; font-weight:800; margin-bottom:14px; color:#fff; }
-  .plan-top p{ font-size:13px; line-height:1.6; color:var(--muted); font-family:'Inter'; text-transform:none; }
-  .plan-top .btn{ margin-top:20px; width:100%; justify-content:center; }
-  .plan-body{ padding:24px 26px 26px; flex:1; }
-  .plan-body .item{ margin-bottom:18px; }
-  .plan-body .item b{ display:flex; gap:10px; align-items:flex-start; font-size:13px; font-family:'Poppins'; color:#fff; margin-bottom:5px; text-transform:none; }
-  .plan-body .item b::before{ content:"✓"; width:18px; height:18px; min-width:18px; border-radius:5px; background:linear-gradient(135deg,var(--blue),var(--teal)); color:#fff; font-size:11px; display:flex; align-items:center; justify-content:center; margin-top:1px; }
-  .plan-body .item span{ font-size:12.5px; color:var(--muted); line-height:1.55; padding-left:28px; display:block; }
+  .service-card:hover{ border-color:var(--teal); transform:translateY(-4px); box-shadow:0 24px 44px -24px rgba(0,73,198,0.25); }
+  .service-card .icon{ font-size:30px; margin-bottom:16px; display:block; }
+  .service-card h3{ font-size:18px; font-weight:800; text-transform:none; color:var(--ink); line-height:1.25; }
+  .service-card .subtitle{ font-size:11px; text-transform:uppercase; letter-spacing:0.09em; color:var(--blue); font-weight:700; margin-top:6px; font-family:'Poppins'; }
+  .service-card p{ font-size:13.5px; color:#6b7195; line-height:1.6; text-transform:none; margin-top:12px; }
 
-  /* ---------- CLIENTES ---------- */
-  .clientes{ background:var(--paper); padding:110px 0; }
-  .client-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:18px; }
-  .client-card{
-    background:var(--white); border-radius:14px; border:1px solid #ECEEF7; padding:22px 16px;
-    display:flex; align-items:center; justify-content:center; height:110px; transition:transform .2s;
-  }
-  .client-card:hover{ transform:translateY(-4px); box-shadow:0 20px 40px -20px rgba(0,73,198,0.3); }
-  .client-card img{ max-height:56px; width:auto; object-fit:contain; }
+  /* ---------- PROCESO (Motor de Marca) ---------- */
+  .proceso{ background:var(--navy); padding:130px 0; position:relative; overflow:hidden; }
+  .blob{ position:absolute; border-radius:50%; filter:blur(70px); opacity:0.4; }
+  .blob-1{ width:520px; height:520px; background:radial-gradient(circle at 30% 30%, var(--teal), transparent 70%); top:-160px; right:-160px; }
+  .blob-2{ width:420px; height:420px; background:radial-gradient(circle at 30% 30%, var(--purple), transparent 70%); bottom:-180px; left:-120px; }
+  .motor-tag{ font-size:14px; font-family:'Poppins'; font-weight:700; color:var(--teal); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:10px;}
+  .steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:26px 20px; position:relative; z-index:2; margin-top:20px; }
+  .step{ position:relative; padding-top:26px; }
+  .step::before{ content:attr(data-n); font-family:'Poppins'; font-weight:900; font-size:40px; color:transparent; -webkit-text-stroke:1.5px rgba(255,255,255,0.25); position:absolute; top:-14px; left:0; }
+  .step h4{ color:#fff; font-size:14.5px; margin:12px 0 8px; font-weight:700; }
+  .step p{ color:#9aa2c4; font-size:12.5px; line-height:1.55; font-family:'Inter'; text-transform:none; }
+
+  /* ---------- AUTORIDAD ---------- */
+  .autoridad{ background:var(--ink); padding:120px 0; }
+  .brand-wall{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px 34px; margin-top:14px; }
+  .brand-wall span{ color:#c7cbe6; font-family:'Poppins'; font-weight:600; font-size:15px; letter-spacing:0.02em; opacity:0.85; }
+  .brand-wall img{ height:28px; opacity:0.9; filter:brightness(0) invert(1); }
+  .industries{ text-align:center; color:var(--muted); font-size:13px; margin-top:22px; letter-spacing:0.03em; line-height:1.8; }
+  .stats-bar{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:70px; text-align:center; border-top:1px solid rgba(255,255,255,0.08); padding-top:50px; }
+  .stats-bar .num{ font-family:'Poppins'; font-weight:900; font-size:clamp(36px,5vw,60px); background:linear-gradient(90deg,var(--blue-light),var(--teal)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .stats-bar .label{ color:var(--muted); font-size:12.5px; margin-top:8px; text-transform:uppercase; letter-spacing:0.05em; font-family:'Poppins'; font-weight:600; }
 
   /* ---------- EQUIPO ---------- */
   .equipo-banner{
@@ -280,24 +300,63 @@
   .team-card > span{ font-size:12.5px; color:var(--blue); font-family:'Poppins'; font-weight:600; text-transform:uppercase; letter-spacing:0.03em; }
   .team-bio{ margin-top:10px; font-size:13px; color:var(--muted); line-height:1.55; text-transform:none; font-family:'Inter'; }
 
-  /* ---------- PROCESO ---------- */
-  .proceso{ background:var(--navy); padding:130px 0; position:relative; overflow:hidden; }
-  .blob{ position:absolute; border-radius:50%; filter:blur(70px); opacity:0.4; }
-  .blob-1{ width:520px; height:520px; background:radial-gradient(circle at 30% 30%, var(--teal), transparent 70%); top:-160px; right:-160px; }
-  .blob-2{ width:420px; height:420px; background:radial-gradient(circle at 30% 30%, var(--purple), transparent 70%); bottom:-180px; left:-120px; }
-  .motor-tag{ font-size:14px; font-family:'Poppins'; font-weight:700; color:var(--teal); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:10px;}
-  .steps{ display:grid; grid-template-columns:repeat(5,1fr); gap:20px; position:relative; z-index:2; margin-top:20px; }
-  .step{ position:relative; padding-top:26px; }
-  .step::before{ content:attr(data-n); font-family:'Poppins'; font-weight:900; font-size:46px; color:transparent; -webkit-text-stroke:1.5px rgba(255,255,255,0.25); position:absolute; top:-18px; left:0; }
-  .step h4{ color:#fff; font-size:15px; margin:14px 0 8px; font-weight:700; }
-  .step p{ color:#9aa2c4; font-size:12.5px; line-height:1.55; font-family:'Inter'; text-transform:none; }
-  .step-line{ position:absolute; top:8px; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--teal),var(--blue-light),var(--purple)); opacity:0.4; }
+  /* ---------- PLANES ---------- */
+  .planes{ background:var(--navy-2); padding:130px 0; position:relative; }
+  .planes::before{ content:""; position:absolute; inset:0; background:radial-gradient(80% 60% at 80% 0%, rgba(31,200,200,0.12), transparent 60%); }
+  .plan-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; position:relative; z-index:2; }
+  .plan-card{
+    background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:14px;
+    display:flex; flex-direction:column; backdrop-filter:blur(6px);
+    transition:border-color .3s ease, transform .3s ease;
+  }
+  .plan-card:hover{ border-color:rgba(31,200,200,0.5); transform:translateY(-6px); }
+  .plan-card.featured{ border-color:var(--teal); background:rgba(31,200,200,0.05); }
+  .plan-top{ padding:32px 26px 24px; border-bottom:1px solid rgba(255,255,255,0.08); }
+  .plan-top .badge{ font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--teal); margin-bottom:10px; }
+  .plan-top h3{ font-size:25px; font-weight:800; margin-bottom:14px; color:#fff; }
+  .plan-top p{ font-size:13px; line-height:1.6; color:var(--muted); font-family:'Inter'; text-transform:none; }
+  .plan-top .tagline{ color:var(--teal); font-weight:700; font-size:12.5px; margin-top:14px; text-transform:none; font-family:'Poppins'; }
+  .plan-top .btn{ margin-top:20px; width:100%; justify-content:center; }
+  .plan-body{ padding:24px 26px 26px; flex:1; }
+  .plan-body .item{ margin-bottom:18px; }
+  .plan-body .item b{ display:flex; gap:10px; align-items:flex-start; font-size:13px; font-family:'Poppins'; color:#fff; margin-bottom:5px; text-transform:none; }
+  .plan-body .item b::before{ content:"✓"; width:18px; height:18px; min-width:18px; border-radius:5px; background:linear-gradient(135deg,var(--blue),var(--teal)); color:#fff; font-size:11px; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+  .plan-body .item span{ font-size:12.5px; color:var(--muted); line-height:1.55; padding-left:28px; display:block; }
+  .planes-close{ text-align:center; margin-top:56px; position:relative; z-index:2; }
+  .planes-close p{ color:var(--muted); font-size:15.5px; margin-bottom:22px; }
 
-  /* ---------- CONTACTO ---------- */
+  /* ---------- PARA QUIÉN ES ---------- */
+  .para-quien{ background:var(--paper); padding:120px 0; }
+  .para-quien .pq-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; }
+  .para-quien h2{ color:var(--ink); font-size:clamp(28px,4vw,42px); font-weight:800; margin-bottom:20px; }
+  .para-quien p{ color:#5b6088; font-size:15px; line-height:1.7; margin-bottom:14px; }
+  .pq-tags{ display:flex; flex-wrap:wrap; gap:10px; }
+  .pq-tags .chip{ cursor:default; }
+  .para-quien .close-line{ text-align:center; max-width:740px; margin:60px auto 0; font-size:18px; color:var(--ink); font-weight:600; line-height:1.6; }
+
+  /* ---------- SERVICIOS CHIPS (reused for Para quién) ---------- */
+  .chip{
+    padding:15px 24px; border-radius:8px; background:var(--white); border:1px solid #E7E9F3;
+    font-size:13.5px; font-weight:600; font-family:'Poppins'; color:var(--ink);
+    display:flex; align-items:center; gap:10px; transition:all .25s ease;
+  }
+  .chip:hover{ background:var(--ink); color:#fff; border-color:transparent; transform:translateY(-3px); }
+
+  /* ---------- LA INVERSIÓN ---------- */
+  .inversion{
+    background:linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 55%, var(--purple) 150%);
+    padding:150px 0; text-align:center; position:relative; overflow:hidden;
+  }
+  .inversion h2{ font-size:clamp(28px,5vw,50px); color:var(--white); font-weight:800; max-width:880px; margin:0 auto; position:relative; z-index:2; line-height:1.22; }
+  .inversion p{ color:#c7cbe6; font-size:15.5px; max-width:680px; margin:22px auto 0; line-height:1.8; position:relative; z-index:2; }
+  .inversion p.close{ color:#fff; font-weight:700; font-size:18px; margin-top:34px; }
+
+  /* ---------- CIERRE / CONTACTO ---------- */
   .contacto{ background:linear-gradient(180deg,var(--navy-2),var(--ink)); padding:130px 0; }
   .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
   .contact-info h2{ color:#fff; font-size:clamp(30px,4vw,46px); font-weight:800; margin-bottom:10px; }
-  .contact-info .sub{ color:var(--teal); font-family:'Poppins'; font-weight:700; margin-bottom:26px; text-transform:uppercase; font-size:15px;}
+  .contact-info .sub{ color:var(--teal); font-family:'Poppins'; font-weight:700; margin-bottom:14px; text-transform:uppercase; font-size:15px;}
+  .contact-info .lead-copy{ color:#aab0d6; font-size:15px; line-height:1.7; margin-bottom:30px; }
   .contact-line{ display:flex; align-items:center; gap:14px; color:#fff; margin-bottom:16px; font-size:15px; }
   .contact-line .ic{ width:38px; height:38px; border-radius:10px; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; }
   .join-btn{ margin-top:30px; }
@@ -315,26 +374,44 @@
   .form-card .btn{ width:100%; justify-content:center; margin-top:8px; }
 
   /* ---------- FOOTER ---------- */
-  footer{ background:var(--ink); padding:50px 0 30px; }
-  .foot-grid{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,0.08); }
+  footer{ background:var(--ink); padding:56px 0 30px; }
+  .foot-top{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px; padding-bottom:34px; border-bottom:1px solid rgba(255,255,255,0.08); }
+  .foot-brand .tagline{ color:var(--muted); font-size:13px; margin-top:10px; letter-spacing:0.04em; text-transform:uppercase; font-family:'Poppins'; font-weight:600; }
+  .foot-contact{ color:#c7cbe6; font-size:13.5px; line-height:2; }
   .foot-social{ display:flex; gap:14px; }
   .foot-social a{ width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,0.06); color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; }
   .foot-bottom{ display:flex; justify-content:space-between; padding-top:22px; color:#6b7195; font-size:12.5px; flex-wrap:wrap; gap:10px;}
   .foot-bottom a{ color:#aab0d6; }
 
-  .floating-cta{ position:fixed; bottom:26px; right:26px; z-index:90; }
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .floating-wa{
+    position:fixed; bottom:26px; right:26px; z-index:90;
+    width:58px; height:58px; border-radius:50%;
+    background:#25D366; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 14px 34px -8px rgba(37,211,102,0.6);
+    transition:transform .2s ease;
+  }
+  .floating-wa:hover{ transform:scale(1.08); }
+  .floating-wa svg{ width:28px; height:28px; }
 
   @media(max-width:980px){
     .gallery-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:180px; }
     .g-span2{ grid-column:span 2; }
     .plan-grid{ grid-template-columns:1fr; }
     .case-grid{ grid-template-columns:1fr; }
-    .client-grid{ grid-template-columns:repeat(3,1fr); }
     .team-grid{ grid-template-columns:1fr; }
     .steps{ grid-template-columns:1fr 1fr; }
     .contact-grid{ grid-template-columns:1fr; }
     .nav-links{ display:none; }
     .equipo-banner-copy{ grid-template-columns:1fr; }
+    .service-modules{ grid-template-columns:1fr 1fr; }
+    .pq-grid{ grid-template-columns:1fr; }
+  }
+  @media(max-width:600px){
+    .service-modules{ grid-template-columns:1fr; }
+    .steps{ grid-template-columns:1fr 1fr; }
+    .stats-bar{ grid-template-columns:1fr; gap:34px; }
+    .nav-cta .btn{ padding:10px 14px; font-size:9.5px; }
   }
 </style>
 </head>
@@ -345,16 +422,14 @@
     <nav>
       <a href="#inicio" class="logo-mark"><img src="assets/indigo.png" alt="Grupo Indigo" style="filter:brightness(0) invert(1);"></a>
       <ul class="nav-links">
-        <li><a href="#galeria">Trabajo</a></li>
+        <li><a href="#transformaciones">Transformaciones</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#portafolio">Casos</a></li>
-        <li><a href="#clientes">Clientes</a></li>
-        <li><a href="#equipo">Equipo</a></li>
         <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#planes">Planes</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="#contacto" class="btn btn-primary">Hablemos</a>
+        <a href="#lead-form" class="btn btn-primary">Quiero mi diagnóstico de marca</a>
       </div>
     </nav>
   </div>
@@ -362,11 +437,35 @@
 
 <!-- HERO -->
 <section class="hero" id="inicio">
+  <div class="hero-kicker">Grupo Índigo · Ingeniería de marca</div>
   <div class="hero-wordmark">Indigo</div>
-  <div class="hero-tagline">Tu marca ya tiene <span class="accent-italic" style="font-size:1.05em;">algo que decir</span></div>
-  <p class="hero-sub">Agencia de marketing digital en Santo Domingo. Estrategia, diseño y contenido para marcas que quieren dejar de improvisar.</p>
+  <h1 class="hero-headline">Tu marca no tiene un problema de producto. Tiene un problema de <span class="grad-text">percepción</span>.</h1>
+  <p class="hero-sub">Construimos la forma en que el mercado ve, recuerda y elige tu marca. Para que dejes de competir por precio y empieces a competir por preferencia.</p>
+  <div class="hero-actions">
+    <a href="#lead-form" class="btn btn-primary">Quiero mi diagnóstico de marca</a>
+    <a href="#transformaciones" class="btn btn-ghost">Ver marcas que transformamos →</a>
+  </div>
   <a href="#galeria" class="scroll-cue"><span>Desliza</span><span class="arrow"></span></a>
 </section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <span class="brand">PepsiCo</span><span class="sep">·</span>
+    <span class="brand">Colgate</span><span class="sep">·</span>
+    <span class="brand">Grupo Ramos</span><span class="sep">·</span>
+    <span class="brand">CEDIMAT</span><span class="sep">·</span>
+    <span class="brand">UNIBE</span><span class="sep">·</span>
+    <span class="brand">Espavet</span>
+    <div class="trust-stats">
+      <span>4 años construyendo marcas dominicanas</span>
+      <span>·</span>
+      <span>+10 especialistas</span>
+      <span>·</span>
+      <span>92% de fidelización</span>
+    </div>
+  </div>
+</div>
 
 <!-- GALERÍA -->
 <section class="gallery" id="galeria">
@@ -383,11 +482,71 @@
   </div>
 </section>
 
-<!-- STATEMENT -->
-<section class="statement">
+<!-- EL PROBLEMA -->
+<section class="problema" id="problema">
   <div class="container">
-    <h2>Del <span class="grad-text">desorden</span> al deseo</h2>
-    <p>Un perfil desordenado le dice al mercado: "somos una empresa que no se tiene clara". Un ecosistema visual coherente dice: "somos una empresa que sabe exactamente lo que vale." La diferencia no está en el presupuesto — está en la dirección estratégica detrás de cada decisión visual.</p>
+    <h2>Tu competencia no te está ganando por tener mejor producto.<span class="line2 grad-text">Te está ganando por verse mejor.</span></h2>
+    <p>Hay marcas en tu categoría que cobran más, cierran más fácil y generan más confianza desde el primer contacto. No porque sean superiores. Porque su comunicación las hace parecer superiores.</p>
+    <p>Esa brecha —entre lo que tu marca realmente es y cómo el mercado la percibe— te está costando clientes, negociaciones y margen todos los días.</p>
+    <p class="close">Y cada día que tu marca no se percibe a la altura de lo que ofrece, es una oportunidad que el mercado le está dando a otro.</p>
+  </div>
+</section>
+
+<!-- EL REFRAME -->
+<section class="reframe" id="reframe">
+  <div class="container">
+    <h2>No hacemos contenido. Construimos la forma en que tu marca es <span class="grad-text">percibida</span>.</h2>
+    <p>Porque el mercado no compra productos. Compra percepciones. Y cuando la percepción no está bien construida, el mejor producto del mundo pierde frente a uno que simplemente se ve mejor.</p>
+    <p>Índigo existe para que eso no le pase a tu marca.</p>
+    <p class="close">Nosotros no llegamos a "publicar". Llegamos a entender tu marca, dirigirla y construir cómo el mercado la va a recordar. Eso no es diseño bonito. Es ingeniería de marca.</p>
+  </div>
+</section>
+
+<!-- TRANSFORMACIONES -->
+<section class="transformaciones" id="transformaciones">
+  <div class="container on-dark">
+    <div class="section-head">
+      <div class="eyebrow">Prueba, no teoría</div>
+      <h2>Esto es lo que pasa cuando una marca <span class="grad-text">entra a Índigo</span></h2>
+      <p>No es teoría. Es lo que le pasó a marcas como la tuya. Este es un extracto — envíanos más material y vamos sumando casos aquí.</p>
+    </div>
+    <div class="case-grid">
+      <div class="case-card">
+        <img src="assets/gallery/lays.jpg" alt="Lay's" loading="lazy">
+        <div class="tag">Consumo · Agro</div>
+        <h4>Lay's — De la tierra a la marca</h4>
+        <p>Historia de sourcing y productores dominicanos llevada a campaña digital.</p>
+      </div>
+      <div class="case-card">
+        <img src="assets/gallery/espavet.jpg" alt="Espavet" loading="lazy">
+        <div class="tag">Activación · Evento</div>
+        <h4>Espavet — Café con Patitas</h4>
+        <p>Transformó un feed disperso en una vitrina que dice: "sabemos exactamente lo que valemos".</p>
+      </div>
+      <div class="case-card">
+        <img src="assets/gallery/guarapa.jpg" alt="La Guarapa" loading="lazy">
+        <div class="tag">Branding completo</div>
+        <h4>La Guarapa — De la confusión a la cultura</h4>
+        <p>Dejó de verse como una marca incomprendida y empezó a sentirse llena de cultura. Sistema visual completo: papelería, uniformes, flota y merchandising.</p>
+      </div>
+      <div class="case-card">
+        <img src="assets/gallery/seabunker.jpg" alt="Sea Bunker" loading="lazy">
+        <div class="tag">Identidad de marca</div>
+        <h4>Sea Bunker — Línea gráfica con carácter</h4>
+        <p>Hoy tiene una línea gráfica fuerte que representa todo lo que quiere proyectar.</p>
+      </div>
+      <div class="case-card">
+        <img src="assets/gallery/swim.jpg" alt="Swim Sandalias" loading="lazy">
+        <div class="tag">Contenido · Social</div>
+        <h4>Swim Sandalias — De feed disperso a vitrina</h4>
+        <p>Un feed desordenado se convirtió en una vitrina que comunica con seguridad lo que la marca vale.</p>
+      </div>
+    </div>
+    <div class="transform-close">
+      <p>La diferencia entre un perfil que dice "no nos tenemos claros" y uno que dice "sabemos lo que valemos" no está en el presupuesto de producción. Está en la dirección estratégica detrás de cada decisión visual.</p>
+      <div class="eyebrow" style="justify-content:center;">¿Cuándo lo transforma tu marca?</div>
+      <a href="#lead-form" class="btn btn-primary">Quiero mi diagnóstico de marca</a>
+    </div>
   </div>
 </section>
 
@@ -396,135 +555,113 @@
   <div class="container on-light">
     <div class="section-head">
       <div class="eyebrow">Qué hacemos</div>
-      <h2>Servicios <span class="grad-text">completos</span></h2>
-      <p>De la estrategia a la producción. Todo lo que tu marca necesita para construir presencia sólida, bajo un mismo equipo.</p>
+      <h2>Todo lo que tu marca necesita para verse —y venderse— al nivel de lo que <span class="grad-text">realmente es</span></h2>
     </div>
-    <div class="service-chips">
-      <div class="chip"><span class="n">1</span>Branding completo</div>
-      <div class="chip"><span class="n">2</span>Rebranding</div>
-      <div class="chip"><span class="n">3</span>Naming</div>
-      <div class="chip"><span class="n">4</span>Manual de marca</div>
-      <div class="chip"><span class="n">5</span>Páginas web</div>
-      <div class="chip"><span class="n">6</span>Landing pages</div>
-      <div class="chip"><span class="n">7</span>Email marketing</div>
-      <div class="chip"><span class="n">8</span>Fotografía comercial</div>
-      <div class="chip"><span class="n">9</span>Producción audiovisual</div>
-      <div class="chip"><span class="n">10</span>Cobertura de eventos</div>
-      <div class="chip"><span class="n">11</span>Lanzamientos</div>
-      <div class="chip"><span class="n">12</span>Actividades digitales</div>
-      <div class="chip"><span class="n">13</span>Campañas express</div>
-      <div class="chip"><span class="n">14</span>Consultorías estratégicas</div>
-      <div class="chip"><span class="n">15</span>Presentaciones comerciales</div>
+    <div class="service-modules">
+      <div class="service-card">
+        <span class="icon">🧠</span>
+        <h3>Marca con dirección</h3>
+        <div class="subtitle">Brand &amp; Strategy</div>
+        <p>Definimos quién eres, cómo debes sentirte en el mercado y por qué deberían elegirte antes de comparar precio. Naming, branding, ADN visual y narrativa que te distingue desde el primer scroll.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">📱</span>
+        <h3>Presencia que trabaja</h3>
+        <div class="subtitle">Social Media Management</div>
+        <p>Contenido con una razón de existir. Cada pieza mueve una percepción, no solo llena un calendario. Estrategia, copywriting que vende y diseño con intención. Instagram, TikTok, LinkedIn y más.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">🎥</span>
+        <h3>Contenido que se siente</h3>
+        <div class="subtitle">Producción audiovisual</div>
+        <p>Tu marca no necesita solo verse bien, necesita sentirse bien. Dirección de escena, no "grabaciones". Fotografía, video y edición que viven en la mente de tu audiencia.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">💻</span>
+        <h3>Tu único territorio propio</h3>
+        <div class="subtitle">Web &amp; Landing pages</div>
+        <p>Tu página es el único espacio 100% tuyo. La diseñamos para vender y posicionar, no para cumplir un requisito. Diseño, percepción y funcionalidad trabajando juntos para convertir visitantes en clientes.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">🎉</span>
+        <h3>Experiencias que hacen ruido</h3>
+        <div class="subtitle">Eventos &amp; activaciones</div>
+        <p>Momentos que la gente quiere vivir, grabar y recordar. Y que siguen trabajando semanas después: en reels, en memoria de marca, en conversación digital.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon">📈</span>
+        <h3>Ideas que se vuelven resultados</h3>
+        <div class="subtitle">Marketing creativo &amp; campañas</div>
+        <p>Lanzamientos, activaciones, campañas y guiones estratégicos. Si hay una idea con potencial, la convertimos en acción — y en resultados.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PORTAFOLIO / CASOS -->
-<section class="portafolio" id="portafolio">
+<!-- PROCESO / MOTOR DE MARCA -->
+<section class="proceso" id="proceso">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
   <div class="container on-dark">
     <div class="section-head">
-      <div class="eyebrow">Casos</div>
-      <h2>Cuando una marca <span class="grad-text">entra a Indigo</span></h2>
-      <p>Estos casos se actualizan con capturas reales de campaña — envíanos más y los vamos sumando aquí.</p>
+      <div class="motor-tag">El Motor de Marca Índigo</div>
+      <h2>Nuestro sistema para transformar marcas con potencial en marcas con <span class="grad-text">presencia</span></h2>
+      <p>No llegamos a ejecutar. Llegamos a entender — porque sin entendimiento, la ejecución más impecable va en la dirección equivocada.</p>
     </div>
-    <div class="case-grid">
-      <div class="case-card">
-        <img src="assets/gallery/lays.jpg" alt="Lay's">
-        <div class="tag">Consumo · Agro</div>
-        <h4>Lay's — De la tierra a la marca</h4>
-        <p>Historia de sourcing y productores dominicanos llevada a campaña digital.</p>
-      </div>
-      <div class="case-card">
-        <img src="assets/gallery/espavet.jpg" alt="Espavet">
-        <div class="tag">Activación · Evento</div>
-        <h4>Espavet — Café con Patitas</h4>
-        <p>Cobertura, merchandising y contenido para el coffee party pet-friendly del año.</p>
-      </div>
-      <div class="case-card">
-        <img src="assets/gallery/guarapa.jpg" alt="Guarapa">
-        <div class="tag">Branding completo</div>
-        <h4>Guarapa — Identidad de marca</h4>
-        <p>Sistema visual completo: papelería, uniformes, flota y merchandising.</p>
-      </div>
+    <div class="steps">
+      <div class="step" data-n="01"><h4>Diagnóstico</h4><p>Tu marca vista con ojos nuevos, sin filtros ni suposiciones.</p></div>
+      <div class="step" data-n="02"><h4>Dirección estratégica</h4><p>Definimos hacia dónde va y cómo debe sentirse en el mercado.</p></div>
+      <div class="step" data-n="03"><h4>Identidad y narrativa</h4><p>Construimos o afinamos la estética, el tono y los mensajes.</p></div>
+      <div class="step" data-n="04"><h4>Producción de contenido</h4><p>Creamos piezas que tienen una razón de existir.</p></div>
+      <div class="step" data-n="05"><h4>Gestión y publicación</h4><p>Publicamos con coherencia y consistencia de marca.</p></div>
+      <div class="step" data-n="06"><h4>Análisis y optimización</h4><p>Medimos lo que importa y ajustamos con criterio.</p></div>
+      <div class="step" data-n="07"><h4>Crecimiento y posicionamiento</h4><p>Tu marca empieza a ocupar el lugar que merece.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PLANES -->
-<section class="planes" id="planes">
+<!-- AUTORIDAD -->
+<section class="autoridad" id="clientes">
   <div class="container on-dark">
     <div class="section-head center" style="margin-left:auto;margin-right:auto;">
-      <div class="eyebrow" style="justify-content:center;">Tres caminos de crecimiento</div>
-      <h2>Elige el nivel <span class="grad-text">de presencia</span> que tu marca necesita</h2>
-      <p>No tiene sentido ofrecerle la misma solución a una marca que está construyendo presencia y a una que está lista para dominar su categoría.</p>
+      <div class="eyebrow" style="justify-content:center;">Autoridad</div>
+      <h2>Marcas que confiaron en nuestra <span class="grad-text">forma de crear</span></h2>
     </div>
-
-    <div class="plan-grid">
-      <div class="plan-card">
-        <div class="plan-top">
-          <div class="badge">🔥 Nivel 1</div>
-          <h3>Start Up Presence</h3>
-          <p>Para marcas que necesitan construir una presencia profesional y dejar de comunicar desde la improvisación.</p>
-          <a href="#contacto" class="btn btn-white">Get started!</a>
-        </div>
-        <div class="plan-body">
-          <div class="item"><b>Estrategia y planificación</b><span>Diagnóstico inicial, estrategia base mensual, definición de objetivos, pilares de contenido, calendario mensual.</span></div>
-          <div class="item"><b>Gestión de redes</b><span>Manejo de 2 plataformas, organización y publicación, supervisión de presencia digital.</span></div>
-          <div class="item"><b>Contenido mensual</b><span>4 reels · 1 carrusel · Stories 1 vez por semana · Posts gráficos · Captions creativos.</span></div>
-          <div class="item"><b>Diseño y producción</b><span>Línea visual mensual, 1 captura mensual, fotografía y video profesional.</span></div>
-          <div class="item"><b>Reporte</b><span>Lectura de desempeño y recomendaciones para el mes siguiente.</span></div>
-        </div>
-      </div>
-
-      <div class="plan-card featured">
-        <div class="plan-top">
-          <div class="badge">🌱 Nivel 2 · Recomendado</div>
-          <h3>Let's Grow</h3>
-          <p>Para marcas que necesitan escalar su presencia con estrategia trimestral y producción más robusta.</p>
-          <a href="#contacto" class="btn btn-white">Get started!</a>
-        </div>
-        <div class="plan-body">
-          <div class="item"><b>Estrategia y planificación</b><span>Diagnóstico inicial, estrategia trimestral, benchmarking, buyer persona, calendario mensual estratégico.</span></div>
-          <div class="item"><b>Gestión de redes</b><span>Manejo de 2 a 3 plataformas, optimización de perfil, coherencia visual y verbal.</span></div>
-          <div class="item"><b>Contenido mensual</b><span>6 reels · 2 carruseles · Stories 2 veces por semana · Copies de venta.</span></div>
-          <div class="item"><b>Diseño y producción</b><span>Dirección visual mensual, 1 captura mensual, fotografía y video profesional.</span></div>
-          <div class="item"><b>Reporte</b><span>Reporte mensual estratégico, lectura de métricas, reunión mensual de seguimiento.</span></div>
-        </div>
-      </div>
-
-      <div class="plan-card">
-        <div class="plan-top">
-          <div class="badge">⭐ Nivel 3</div>
-          <h3>Own Your Space</h3>
-          <p>Para marcas listas para posicionarse con fuerza. Indigo entra como aliado estratégico completo.</p>
-          <a href="#contacto" class="btn btn-white">Get started!</a>
-        </div>
-        <div class="plan-body">
-          <div class="item"><b>Estrategia y planificación</b><span>Auditoría profunda, posicionamiento de marca, customer journey, brand storytelling, tono de voz.</span></div>
-          <div class="item"><b>Gestión de redes</b><span>Manejo multicanal, optimización constante, acompañamiento estratégico continuo.</span></div>
-          <div class="item"><b>Contenido mensual</b><span>8 reels · 4 carruseles · Stories 4 veces por semana · contenido institucional y de venta.</span></div>
-          <div class="item"><b>Email marketing</b><span>Diseño y redacción de campañas, comunicación directa, apoyo a lanzamientos y fidelización.</span></div>
-          <div class="item"><b>Análisis ejecutivo</b><span>Reporte avanzado, identificación de oportunidades, reunión mensual o quincenal.</span></div>
-        </div>
-      </div>
+    <div class="brand-wall">
+      <img src="assets/rodea.png" alt="Rodea" loading="lazy">
+      <img src="assets/noah.png" alt="Noah Scent" loading="lazy">
+      <img src="assets/3designers.png" alt="3Designers" loading="lazy">
+      <img src="assets/parfum.png" alt="Parfum Exclusif" loading="lazy">
+      <img src="assets/ova.png" alt="OVA Soluciones Gráficas" loading="lazy">
+      <span class="brand">PepsiCo</span>
+      <span class="brand">Colgate-Palmolive</span>
+      <span class="brand">Grupo Ramos</span>
+      <span class="brand">CEDIMAT</span>
+      <span class="brand">UNIBE</span>
+      <span class="brand">Filorga</span>
+      <span class="brand">Avène</span>
+      <span class="brand">Moroccanoil</span>
+      <span class="brand">Jugos Yei</span>
+      <span class="brand">Mallén</span>
+      <span class="brand">Berbran</span>
+      <span class="brand">Magic Joe</span>
+      <span class="brand">The Besties Club</span>
+      <span class="brand">Rattan Dominicano</span>
     </div>
-  </div>
-</section>
-
-<!-- CLIENTES -->
-<section class="clientes" id="clientes">
-  <div class="container">
-    <div class="section-head center" style="margin-left:auto;margin-right:auto;">
-      <div class="eyebrow" style="justify-content:center;color:var(--blue);">Confían en nosotros</div>
-      <h2 style="color:var(--ink);">Marcas que ya <span class="grad-text">construyen con Indigo</span></h2>
-    </div>
-    <div class="client-grid">
-      <div class="client-card"><img src="assets/rodea.png" alt="Rodea Mobiliario Infantil"></div>
-      <div class="client-card"><img src="assets/noah.png" alt="Noah Scent"></div>
-      <div class="client-card"><img src="assets/3designers.png" alt="3Designers"></div>
-      <div class="client-card"><img src="assets/parfum.png" alt="Parfum Exclusif"></div>
-      <div class="client-card"><img src="assets/ova.png" alt="OVA Soluciones Gráficas" style="filter:invert(1) grayscale(1) brightness(0.3);"></div>
-      <div class="client-card" style="color:var(--muted);font-family:'Poppins';font-weight:700;font-size:13px;text-align:center;">+ tu marca aquí</div>
+    <p class="industries">Salud · Belleza · Consumo masivo · Educación · Retail · Eventos · Bienestar · Alimentos · Emprendimientos en crecimiento</p>
+    <div class="stats-bar">
+      <div>
+        <div class="num" data-count="4" data-suffix="+">0</div>
+        <div class="label">Años construyendo marcas dominicanas</div>
+      </div>
+      <div>
+        <div class="num" data-count="10" data-suffix="+">0</div>
+        <div class="label">Especialistas trabajando en cada cuenta</div>
+      </div>
+      <div>
+        <div class="num" data-count="92" data-suffix="%">0</div>
+        <div class="label">Fidelización de clientes</div>
+      </div>
     </div>
   </div>
 </section>
@@ -549,32 +686,32 @@
     </div>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-photo"><img src="assets/team/megan.jpg" alt="Megan Santana"></div>
+        <div class="team-photo"><img src="assets/team/megan.jpg" alt="Megan Santana" loading="lazy"></div>
         <h4>Megan Santana</h4><span>CEO</span>
         <p class="team-bio">Traza el norte de Indigo. Donde otros ven un proyecto, ella ve la marca completa.</p>
       </div>
       <div class="team-card">
-        <div class="team-photo"><img src="assets/team/adrian.jpg" alt="Adrian Vasquez"></div>
+        <div class="team-photo"><img src="assets/team/adrian.jpg" alt="Adrian Vasquez" loading="lazy"></div>
         <h4>Adrian Vasquez</h4><span>CFO / CEO</span>
         <p class="team-bio">La estrategia y el negocio detrás de cada decisión. Números con criterio.</p>
       </div>
       <div class="team-card">
-        <div class="team-photo"><img src="assets/team/gisel.jpg" alt="Gisel Ortiz"></div>
+        <div class="team-photo"><img src="assets/team/gisel.jpg" alt="Gisel Ortiz" loading="lazy"></div>
         <h4>Gisel Ortiz</h4><span>Directora de Marketing</span>
         <p class="team-bio">Convierte objetivos de negocio en campañas que sí mueven la aguja.</p>
       </div>
       <div class="team-card">
-        <div class="team-photo"><img src="assets/team/pamela.jpg" alt="Pamela Moreno"></div>
+        <div class="team-photo"><img src="assets/team/pamela.jpg" alt="Pamela Moreno" loading="lazy"></div>
         <h4>Pamela Moreno</h4><span>Content Creator</span>
         <p class="team-bio">Piensa en contenido antes que en calendario. Cada pieza tiene una razón de existir.</p>
       </div>
       <div class="team-card">
-        <div class="team-photo"><img src="assets/team/elvis.jpg" alt="Elvis Zorrilla"></div>
+        <div class="team-photo"><img src="assets/team/elvis.jpg" alt="Elvis Zorrilla" loading="lazy"></div>
         <h4>Elvis Zorrilla</h4><span>Filmmaker</span>
         <p class="team-bio">Detrás de cámara, moldeando cómo se ve y se siente cada marca en movimiento.</p>
       </div>
       <div class="team-card">
-        <div class="team-photo"><img src="assets/team/astrid.jpg" alt="Astrid"></div>
+        <div class="team-photo"><img src="assets/team/astrid.jpg" alt="Astrid" loading="lazy"></div>
         <h4>Astrid</h4><span>Diseñadora</span>
         <p class="team-bio">Traduce estrategia en diseño que se sostiene — no solo que se ve bien hoy.</p>
       </div>
@@ -582,64 +719,136 @@
   </div>
 </section>
 
-<!-- PROCESO / SEGUIMIENTO -->
-<section class="proceso" id="proceso">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
+<!-- PLANES -->
+<section class="planes" id="planes">
   <div class="container on-dark">
-    <div class="section-head">
-      <div class="motor-tag">El Motor de Marca Indigo</div>
-      <h2>Seguimiento <span class="grad-text">claro</span>, de principio a fin</h2>
-      <p>No llegamos a ejecutar. Llegamos a entender — porque sin entendimiento, la ejecución más impecable va en la dirección equivocada.</p>
+    <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Tres caminos. Tres momentos distintos</div>
+      <h2>Start Up Presence <span class="grad-text">ordena</span> tu marca. Let's Grow la <span class="grad-text">mueve</span>. Own Your Space la <span class="grad-text">posiciona</span>.</h2>
+      <p>No tiene sentido darle la misma solución a una marca que está construyendo presencia y a una que está lista para dominar su categoría. La pregunta no es cuánto contenido necesitas. Es qué tan fuerte quieres que tu marca se sienta en el mercado.</p>
     </div>
-    <div class="steps">
-      <div class="step-line"></div>
-      <div class="step" data-n="1"><h4>Contacto</h4><p>Nos escribes por el formulario, WhatsApp o Instagram y agendamos una llamada inicial.</p></div>
-      <div class="step" data-n="2"><h4>Diagnóstico</h4><p>Auditamos tu presencia actual y entendemos el momento real de tu marca.</p></div>
-      <div class="step" data-n="3"><h4>Propuesta</h4><p>Te recomendamos el nivel (Start Up, Let's Grow u Own Your Space) que corresponde.</p></div>
-      <div class="step" data-n="4"><h4>Ejecución</h4><p>Estrategia, diseño, contenido y producción corriendo mes a mes con calendario definido.</p></div>
-      <div class="step" data-n="5"><h4>Reporte</h4><p>Reunión de seguimiento con métricas claras y próximos pasos.</p></div>
+
+    <div class="plan-grid">
+      <div class="plan-card">
+        <div class="plan-top">
+          <div class="badge">Start Up Presence</div>
+          <h3>Ordena tu marca</h3>
+          <p>Para marcas que necesitan construir una presencia profesional y dejar de comunicar desde la improvisación.</p>
+          <div class="tagline">Convierte tu presencia en algo más claro, limpio y profesional.</div>
+          <a href="#lead-form" class="btn btn-white">Quiero mi diagnóstico de marca</a>
+        </div>
+        <div class="plan-body">
+          <div class="item"><b>Estrategia y planificación</b><span>Diagnóstico inicial, estrategia base mensual, definición de objetivos, pilares de contenido, calendario mensual.</span></div>
+          <div class="item"><b>Gestión de redes</b><span>Manejo de 2 plataformas, organización y publicación, supervisión de presencia digital.</span></div>
+          <div class="item"><b>Contenido mensual</b><span>4 reels · 1 carrusel · Stories 1 vez por semana · Posts gráficos · Captions creativos.</span></div>
+          <div class="item"><b>Diseño y producción</b><span>Línea visual mensual, 1 captura mensual, fotografía y video profesional.</span></div>
+          <div class="item"><b>Reporte</b><span>Lectura de desempeño y recomendaciones para el mes siguiente.</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card featured">
+        <div class="plan-top">
+          <div class="badge">⭐ Let's Grow · Más elegido</div>
+          <h3>Mueve tu marca</h3>
+          <p>Para marcas que ya tienen presencia pero sienten que su comunicación aún no trabaja para ellas.</p>
+          <div class="tagline">Convierte tu contenido en una herramienta real de crecimiento y venta.</div>
+          <a href="#lead-form" class="btn btn-white">Quiero mi diagnóstico de marca</a>
+        </div>
+        <div class="plan-body">
+          <div class="item"><b>Estrategia y planificación</b><span>Diagnóstico inicial, estrategia trimestral, benchmarking, buyer persona, calendario mensual estratégico.</span></div>
+          <div class="item"><b>Gestión de redes</b><span>Manejo de 2 a 3 plataformas, optimización de perfil, coherencia visual y verbal.</span></div>
+          <div class="item"><b>Contenido mensual</b><span>6 reels · 2 carruseles · Stories 2 veces por semana · Copies de venta.</span></div>
+          <div class="item"><b>Diseño y producción</b><span>Dirección visual mensual, 1 captura mensual, fotografía y video profesional.</span></div>
+          <div class="item"><b>Reporte</b><span>Reporte mensual estratégico, lectura de métricas, reunión mensual de seguimiento.</span></div>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-top">
+          <div class="badge">Own Your Space</div>
+          <h3>Posiciona tu marca</h3>
+          <p>Para marcas listas para posicionarse con fuerza y ocupar un lugar claro en su categoría. Índigo entra como aliado estratégico completo.</p>
+          <div class="tagline">Convierte tu marca en una presencia más fuerte y difícil de ignorar.</div>
+          <a href="#lead-form" class="btn btn-white">Quiero mi diagnóstico de marca</a>
+        </div>
+        <div class="plan-body">
+          <div class="item"><b>Estrategia y planificación</b><span>Auditoría profunda, posicionamiento de marca, customer journey, brand storytelling, tono de voz.</span></div>
+          <div class="item"><b>Gestión de redes</b><span>Manejo multicanal, optimización constante, acompañamiento estratégico continuo.</span></div>
+          <div class="item"><b>Contenido mensual</b><span>8 reels · 4 carruseles · Stories 4 veces por semana · contenido institucional y de venta.</span></div>
+          <div class="item"><b>Email marketing</b><span>Diseño y redacción de campañas, comunicación directa, apoyo a lanzamientos y fidelización.</span></div>
+          <div class="item"><b>Análisis ejecutivo</b><span>Reporte avanzado, identificación de oportunidades, reunión mensual o quincenal.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="planes-close">
+      <p>¿No sabes cuál es el tuyo? Es exactamente lo que resolvemos en el diagnóstico.</p>
+      <a href="#lead-form" class="btn btn-primary">Quiero mi diagnóstico de marca</a>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO -->
+<!-- PARA QUIÉN ES -->
+<section class="para-quien" id="para-quien">
+  <div class="container">
+    <div class="pq-grid">
+      <div>
+        <h2>Índigo es para marcas que están listas para <span class="grad-text">tomarse en serio</span>.</h2>
+        <p>Para negocios con potencial real que merecen verse como lo que son.</p>
+        <p>Para dueños que entienden que la percepción es parte de la estrategia de ventas.</p>
+        <p>Para equipos que necesitan un aliado que piense la marca, no solo que la ejecute.</p>
+      </div>
+      <div class="pq-tags">
+        <div class="chip">Supermercados</div>
+        <div class="chip">Clínicas</div>
+        <div class="chip">Restaurantes</div>
+        <div class="chip">Universidades</div>
+        <div class="chip">Constructoras</div>
+        <div class="chip">Marcas de belleza</div>
+        <div class="chip">Empresas familiares</div>
+        <div class="chip">Emprendimientos en crecimiento</div>
+      </div>
+    </div>
+    <p class="close-line">Si tu marca tiene potencial pero todavía no se percibe a la altura de lo que ofrece, este es el momento de cambiar eso.</p>
+  </div>
+</section>
+
+<!-- LA INVERSIÓN -->
+<section class="inversion" id="inversion">
+  <div class="container">
+    <h2>Esto no es una inversión en redes sociales. Es una inversión en cómo tu mercado va a <span class="grad-text">percibir tu marca</span>.</h2>
+    <p>Una marca que se percibe profesional genera más confianza. Una que comunica con claridad reduce la fricción de venta. Una con dirección estratégica deja de depender de la suerte o del precio más bajo.</p>
+    <p>El retorno no siempre aparece en un reporte de métricas. Aparece en el cliente que elige tu marca sin cuestionarlo. En la negociación que se cierra porque proyectas solidez. En el precio que el mercado está dispuesto a pagarte porque tu marca se percibe a ese nivel.</p>
+    <p class="close">Lo que construimos juntos no es contenido. Es la forma en que tu mercado va a recordar tu marca.</p>
+  </div>
+</section>
+
+<!-- CIERRE / CTA FINAL -->
 <section class="contacto" id="contacto">
   <div class="container contact-grid">
     <div class="contact-info">
       <div class="sub">Hablemos</div>
       <h2>Tu marca ya tiene algo que decir</h2>
-      <p style="color:#aab0d6;margin:18px 0 34px;font-size:15px;line-height:1.6;">Cuéntanos en qué punto está tu marca hoy. Te contactamos para definir el plan ideal.</p>
+      <p class="lead-copy">Nosotros construimos la forma en que el mercado quiere escucharla. Start Up Presence ordena tu marca. Let's Grow la mueve. Own Your Space la posiciona. El primer paso no cuesta nada: un diagnóstico donde vemos tu marca con ojos nuevos y te decimos, sin filtros, dónde está la brecha y cómo se cierra.</p>
       <div class="contact-line"><span class="ic">📞</span> 829-222-1615</div>
       <div class="contact-line"><span class="ic">✉️</span> hello@grupoindigodigital.com</div>
       <div class="contact-line"><span class="ic">📷</span> @grupoindigodigital</div>
       <div class="contact-line"><span class="ic">📍</span> Santo Domingo, República Dominicana</div>
-      <a href="#lead-form" class="btn btn-primary join-btn">Quiero unirme como cliente →</a>
+      <a href="#lead-form" class="btn btn-primary join-btn">Quiero mi diagnóstico de marca →</a>
     </div>
 
     <div class="form-card" id="lead-form">
       <h3>Cuéntanos de tu marca</h3>
-      <span class="muted">Este formulario le llega directo por correo al equipo (gerencia, movalles y gortiz) para darte seguimiento.</span>
+      <span class="muted">Formulario mínimo — este mensaje le llega directo por correo al equipo (gerencia, movalles y gortiz) para darte seguimiento.</span>
       <form action="https://formsubmit.co/gerencia@grupoindigodigital.com" method="POST">
         <input type="hidden" name="_cc" value="movalles@grupoindigodigital.com,gortiz@grupoindigodigital.com">
         <input type="hidden" name="_subject" value="Nuevo prospecto — Landing Grupo Indigo">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <div class="form-row"><label>Nombre completo</label><input type="text" name="Nombre" placeholder="Tu nombre" required></div>
-        <div class="form-row"><label>Marca / Empresa</label><input type="text" name="Marca / Empresa" placeholder="Nombre de tu marca"></div>
-        <div class="form-row"><label>Email</label><input type="email" name="Email" placeholder="tucorreo@ejemplo.com" required></div>
-        <div class="form-row"><label>Teléfono / WhatsApp</label><input type="tel" name="Teléfono" placeholder="+1 809 000 0000"></div>
-        <div class="form-row"><label>¿Qué necesitas?</label>
-          <select name="Interés">
-            <option>Aún no lo sé, quiero asesoría</option>
-            <option>Start Up Presence</option>
-            <option>Let's Grow</option>
-            <option>Own Your Space</option>
-            <option>Servicio puntual (branding, web, evento...)</option>
-          </select>
-        </div>
-        <div class="form-row"><label>Mensaje</label><textarea name="Mensaje" placeholder="Cuéntanos brevemente qué necesita tu marca..."></textarea></div>
-        <button class="btn btn-primary" type="submit">Enviar y unirme →</button>
+        <div class="form-row"><label>Marca / Empresa</label><input type="text" name="Marca / Empresa" placeholder="Nombre de tu marca" required></div>
+        <div class="form-row"><label>WhatsApp</label><input type="tel" name="WhatsApp" placeholder="+1 809 000 0000" required></div>
+        <button class="btn btn-primary" type="submit">Quiero mi diagnóstico de marca →</button>
       </form>
     </div>
   </div>
@@ -647,26 +856,65 @@
 
 <footer>
   <div class="container">
-    <div class="foot-grid">
-      <img src="assets/indigo.png" alt="Grupo Indigo" style="height:28px;filter:brightness(0) invert(1);">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/indigo.png" alt="Grupo Indigo" style="height:28px;filter:brightness(0) invert(1);">
+        <div class="tagline">Estrategia · Creatividad · Contenido · Crecimiento</div>
+      </div>
+      <div class="foot-contact">
+        📍 Santo Domingo, RD<br>
+        📱 829-222-1615<br>
+        ✉️ hello@grupoindigodigital.com<br>
+        @grupoindigodigital
+      </div>
       <div class="foot-social">
-        <a href="#">ig</a><a href="#">fb</a><a href="#">tk</a><a href="#">in</a>
+        <a href="#">ig</a><a href="#">tk</a><a href="#">in</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Grupo Indigo Digital. Todos los derechos reservados.</span>
+      <span>© 2026 Grupo Índigo Digital. Todos los derechos reservados.</span>
       <a href="#inicio">Volver arriba ↑</a>
     </div>
   </div>
 </footer>
 
-<a href="#lead-form" class="floating-cta btn btn-primary">Únete ahora →</a>
+<a href="https://wa.me/18292221615?text=Hola%20Grupo%20Indigo%2C%20quiero%20mi%20diagn%C3%B3stico%20de%20marca" target="_blank" rel="noopener" class="floating-wa" aria-label="Hablar con Índigo por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="white"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.912 6.48L4 29l7.72-1.87A11.93 11.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.6c-1.94 0-3.75-.53-5.31-1.45l-.38-.22-4.58 1.11 1.13-4.46-.25-.4A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.6-10.6S26.6 9.15 26.6 15 21.85 24.6 16.001 24.6zm5.86-7.93c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.72.16-.21.32-.82 1.05-1.01 1.26-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.02-.55-.08-.16-.72-1.74-.99-2.38-.26-.63-.53-.54-.72-.55-.19-.01-.4-.01-.61-.01-.21 0-.55.08-.84.4-.29.32-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.23 3.4 5.4 4.77.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+</a>
 
 <script>
   window.addEventListener('scroll', function(){
     var h = document.getElementById('siteHeader');
     if(window.scrollY > 40){ h.classList.add('scrolled'); } else { h.classList.remove('scrolled'); }
   });
+
+  // Animated stat counters
+  var counters = document.querySelectorAll('.stats-bar .num');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var suffix = el.getAttribute('data-suffix') || '';
+      var current = 0;
+      var step = Math.max(1, Math.round(target / 40));
+      var interval = setInterval(function(){
+        current += step;
+        if(current >= target){ current = target; clearInterval(interval); }
+        el.textContent = current + suffix;
+      }, 30);
+    });
+  }
+  var statsBar = document.querySelector('.stats-bar');
+  if(statsBar){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ runCounters(); observer.disconnect(); }
+      });
+    }, { threshold: 0.4 });
+    observer.observe(statsBar);
+  }
 </script>
 
 </body>
