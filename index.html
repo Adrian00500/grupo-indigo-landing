@@ -889,22 +889,29 @@
     if(window.scrollY > 40){ h.classList.add('scrolled'); } else { h.classList.remove('scrolled'); }
   });
 
-  // Animated stat counters
+  // Animated stat counters (time-based, immune to setInterval throttling)
   var counters = document.querySelectorAll('.stats-bar .num');
   var counted = false;
   function runCounters(){
     if(counted) return;
     counted = true;
+    var duration = 1200;
     counters.forEach(function(el){
       var target = parseInt(el.getAttribute('data-count'), 10);
       var suffix = el.getAttribute('data-suffix') || '';
-      var current = 0;
-      var step = Math.max(1, Math.round(target / 40));
-      var interval = setInterval(function(){
-        current += step;
-        if(current >= target){ current = target; clearInterval(interval); }
+      var start = null;
+      function frame(ts){
+        if(start === null) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var current = Math.round(progress * target);
         el.textContent = current + suffix;
-      }, 30);
+        if(progress < 1){
+          requestAnimationFrame(frame);
+        }
+      }
+      requestAnimationFrame(frame);
+      // Safety net in case rAF stalls (e.g. backgrounded tab) — force final value
+      setTimeout(function(){ el.textContent = target + suffix; }, duration + 1500);
     });
   }
   var statsBar = document.querySelector('.stats-bar');
@@ -913,8 +920,10 @@
       entries.forEach(function(entry){
         if(entry.isIntersecting){ runCounters(); observer.disconnect(); }
       });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.3 });
     observer.observe(statsBar);
+  } else {
+    runCounters();
   }
 </script>
 
