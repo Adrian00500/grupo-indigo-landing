@@ -119,15 +119,13 @@
     font-size:clamp(80px,19vw,300px); letter-spacing:-0.04em; line-height:0.82;
     width:100%;
     background:linear-gradient(100deg,#5C9BFF 0%, #8B5CF6 35%, #46D9D9 70%, #5C9BFF 100%);
-    background-size:220% 100%;
     -webkit-background-clip:text; background-clip:text; color:transparent;
-    filter:drop-shadow(0 0 45px rgba(46,124,246,0.55)) drop-shadow(0 0 90px rgba(31,200,200,0.4));
-    animation:wordmark-shine 7s ease-in-out infinite;
     position:relative; z-index:2; margin-top:10px;
   }
-  @keyframes wordmark-shine{
-    0%,100%{ background-position:0% 50%; }
-    50%{ background-position:100% 50%; }
+  .hero-logo{
+    height:38px; width:auto; margin:22px auto 0; display:block;
+    filter:brightness(0) invert(1); opacity:0.92;
+    position:relative; z-index:2;
   }
   .hero-headline{
     color:var(--white); font-size:clamp(22px,3.4vw,40px); font-family:'Poppins'; font-weight:800;
@@ -280,9 +278,9 @@
   .equipo-banner-inner{ padding:100px 0; color:#fff; position:relative; z-index:2; }
   .equipo-banner h2{
     font-size:clamp(48px,10vw,140px); font-weight:900; opacity:1;
-    background:linear-gradient(100deg,#F4D88C 0%, #E8B84B 45%, #FFF3CE 75%, #D4A62E 100%);
+    background:linear-gradient(100deg,#5C9BFF 0%, #8B5CF6 45%, #46D9D9 100%);
     -webkit-background-clip:text; background-clip:text; color:transparent;
-    text-shadow:0 0 50px rgba(232,184,75,0.35);
+    text-shadow:0 0 40px rgba(70,217,217,0.3);
   }
   .equipo-banner-copy{ display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:22px; max-width:1000px; }
   .equipo-banner-copy p{ font-size:14.5px; color:#c9cee8; line-height:1.7; text-transform:none; font-family:'Inter'; }
@@ -440,6 +438,7 @@
 <section class="hero" id="inicio">
   <div class="hero-kicker">Grupo Índigo · Ingeniería de marca</div>
   <div class="hero-wordmark">Indigo</div>
+  <img src="assets/indigo.png" alt="Grupo Indigo" class="hero-logo">
   <h1 class="hero-headline">Tu marca no tiene un problema de producto. Tiene un problema de <span class="grad-text">percepción</span>.</h1>
   <p class="hero-sub">Construimos la forma en que el mercado ve, recuerda y elige tu marca. Para que dejes de competir por precio y empieces a competir por preferencia.</p>
   <div class="hero-actions">
