@@ -111,19 +111,26 @@
   }
   .hero-wordmark{
     font-family:'Poppins', sans-serif; font-weight:900; text-transform:uppercase;
-    font-size:clamp(64px,14vw,180px); letter-spacing:-0.03em; line-height:0.85;
-    background:linear-gradient(100deg,#3E7CFF 0%, #6A3FD8 45%, #1FC8C8 100%);
+    font-size:clamp(96px,23vw,380px); letter-spacing:-0.04em; line-height:0.82;
+    width:100%;
+    background:linear-gradient(100deg,#5C9BFF 0%, #8B5CF6 35%, #46D9D9 70%, #5C9BFF 100%);
+    background-size:220% 100%;
     -webkit-background-clip:text; background-clip:text; color:transparent;
+    filter:drop-shadow(0 0 45px rgba(46,124,246,0.55)) drop-shadow(0 0 90px rgba(31,200,200,0.4));
+    animation:wordmark-shine 7s ease-in-out infinite;
     position:relative; z-index:2;
+  }
+  @keyframes wordmark-shine{
+    0%,100%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
   }
   .hero-tagline{
     color:var(--white); font-size:clamp(16px,2.4vw,22px); font-family:'Poppins'; font-weight:500;
-    text-transform:none; margin-top:18px; max-width:620px; position:relative; z-index:2;
+    text-transform:none; margin-top:26px; max-width:620px; position:relative; z-index:2;
   }
   .hero-sub{ color:var(--muted); font-size:15px; margin-top:16px; max-width:560px; line-height:1.6; position:relative; z-index:2;}
-  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:38px; position:relative; z-index:2; }
   .scroll-cue{
-    margin-top:70px; display:flex; flex-direction:column; align-items:center; gap:10px;
+    margin-top:60px; display:flex; flex-direction:column; align-items:center; gap:10px;
     color:var(--muted); font-size:11px; letter-spacing:0.15em; text-transform:uppercase; position:relative; z-index:2;
   }
   .scroll-cue .arrow{
@@ -358,10 +365,6 @@
   <div class="hero-wordmark">Indigo</div>
   <div class="hero-tagline">Tu marca ya tiene <span class="accent-italic" style="font-size:1.05em;">algo que decir</span></div>
   <p class="hero-sub">Agencia de marketing digital en Santo Domingo. Estrategia, diseño y contenido para marcas que quieren dejar de improvisar.</p>
-  <div class="hero-actions">
-    <a href="#galeria" class="btn btn-primary">Ver nuestro trabajo</a>
-    <a href="#contacto" class="btn btn-ghost">Quiero unirme →</a>
-  </div>
   <a href="#galeria" class="scroll-cue"><span>Desliza</span><span class="arrow"></span></a>
 </section>
 
